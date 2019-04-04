@@ -1,0 +1,16 @@
+{% extends 'music/baseTemplate.html' %}
+
+{% block title %}
+User Registration
+{% endblock %}
+
+
+{% block body %}
+
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {% include "music/form-template.html" %}
+        <input type="submit" value="Submit" >
+    </form>
+
+{% endblock %}
